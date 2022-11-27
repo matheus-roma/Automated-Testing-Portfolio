@@ -24,7 +24,7 @@ when switching the page language to brazilian portuguese, some texts aren't tran
 <br>
 <br>
 
-**Repro instructions (if applicable):** 
+**Reprodution instructions (if applicable):** 
 
 - Switch the page language to português-Brasil
 - Check if all text on the page
@@ -45,7 +45,7 @@ when filling the required fields with non alphanumeric characters such as simbol
 
 **Current behavior:** Allows the submition of the form without show any error message.
 
-**Repro instructions (if applicable):**
+**Reprodution instructions (if applicable):**
 
 - Click on the first field and fill it with `!@#&()–[{}]:;',?/*~$^+=<>“.1234567890`
 - Click on the second field and fill it with `10102050`

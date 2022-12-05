@@ -12,6 +12,8 @@ xPathFeedbackItems = [
 "/html/body/div[1]/div[1]/div/div/div/div/div/form/div[4]/div[2]/div/div/div[1]/div/div/div[1]/div/div[2]/div/div/div/span[2]/div",
 "/html/body/div[1]/div[1]/div/div/div/div/div/form/div[4]/div[2]/div/div/div[1]/div/div/div[2]/div/div/div/div/div/span[2]/div"]
 
+feedbackEmptyField = "This field is required."
+
 //Test submition with all fields empty
 async function testEmptyFields(){
     let driver = new Builder().forBrowser("firefox").build();
@@ -30,9 +32,9 @@ async function testEmptyFields(){
         let feedbackItem2 = driver.wait(until.elementLocated(By.xpath(xPathFeedbackItems[1])));
         let feedbackItem3 = driver.wait(until.elementLocated(By.xpath(xPathFeedbackItems[2])));
     
-        assert.strictEqual(await feedbackItem1.getText(), "This field is required.");
-        assert.strictEqual(await feedbackItem2.getText(), "This field is required.");
-        assert.strictEqual(await feedbackItem3.getText(), "This field is required.");
+        assert.strictEqual(await feedbackItem1.getText(), feedbackEmptyField);
+        assert.strictEqual(await feedbackItem2.getText(), feedbackEmptyField);
+        assert.strictEqual(await feedbackItem3.getText(), feedbackEmptyField);
         console.log("PASS!")
     
     } finally {

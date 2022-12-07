@@ -1,5 +1,5 @@
-# Automated-Testing-Portfolio
-### Portfolio repository to show test skills
+# Test automation for a form page
+### Designing and automating tests and reporting found issues.
 
 ## Test Plan
 
